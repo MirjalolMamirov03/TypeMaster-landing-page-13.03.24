@@ -1,0 +1,18 @@
+
+
+/* Barlow */
+
+@font-face {
+    font-family: "Barlow";
+    src: url(../Barlow/Barlow-Medium.ttf);
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: "Barlow";
+    src: url(../Barlow/Barlow-Black.ttf);
+    font-weight: 900;
+}
+
+/* //Barlow */
