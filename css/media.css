@@ -13,7 +13,13 @@
 
 /* //CUSTOM-PROPS */
 
-
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: auto;
+}
 
 /* Tab */
 @media (max-width: 992px) {
@@ -38,7 +44,7 @@
     }
 
 
-    .about-images   {
+    .about-images {
         width: 100%;
         display: flex;
         justify-content: flex-end;
@@ -63,14 +69,14 @@
 
     /* Card */
 
-    .cards  {
+    .cards {
         justify-content: flex-end;
         row-gap: 70px;
     }
 
     .card {
         width: 45%;
-        
+
     }
 
     /* //Card */
@@ -83,7 +89,7 @@
     .hero-image::after {
         transform: scale(0) !important;
     }
-    
+
     .hero-desc {
         width: 339px;
     }
@@ -117,13 +123,15 @@
     }
 
     .hero-image {
+        position: unset !important;
         width: 30px;
         transform: translateX(220px);
     }
-    
+
     .hero-desc__btn-dark {
         padding: 10px 12px !important;
     }
+
     /* About */
 
     .about::before {
@@ -142,7 +150,7 @@
     }
 
 
-    .about-images   {
+    .about-images {
         width: 100%;
         display: flex;
         justify-content: flex-end;
@@ -162,21 +170,21 @@
         max-width: 398px !important;
         width: 100%;
     }
-    
+
 
     /* //About */
 
 
     /* Card */
 
-    .cards  {
+    .cards {
         justify-content: flex-end;
         row-gap: 70px;
     }
 
     .card {
         width: 45%;
-        
+
     }
 
     /* //Card */
@@ -185,12 +193,82 @@
 @media (max-width: 684px) {}
 
 /* mobile < 576 */
-@media (max-width: 576px) {}
 
-@media (max-width: 480px) {}
 
-@media (max-width: 412px) {}
+@media (max-width: 375px) {
+    .site-hero-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 70px;
+    }
 
-@media (max-width: 375px) {}
+    .hero-image {
+        display: flex;
+        justify-content: flex-end !important;
+        width: 372px;
+        height: 331px;
+    }
+
+
+
+    /* About */
+    /* .about-images {
+        col
+    } */
+
+    .about-image-laptop,
+    .about-image-keyboard,
+    .about-sm-img {
+        width: 129px !important;
+        height: 193px;
+
+    }
+
+    .about-desc {
+        flex-direction: column !important;
+        row-gap: 24px !important;
+    }
+
+    .about-desc__title {
+        margin-bottom: unset !important;
+        text-align: center;
+    }
+
+    .about-desc__text {
+        max-width: 327px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* //About */
+
+
+    /* Cards */
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px !important;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .card-title {
+        text-align: center;
+    }
+
+    .card-text {
+        text-align: center;
+    }
+
+    /* //Cards */
+}
 
 @media (max-width: 320px) {}
